@@ -10,13 +10,15 @@
    <header>
     <div class="logo_container"><a href="#"><img src="Images/myntra_logo.webp" class="Myntra_home" alt="myntra_logo" ></a></div>
     <nav class="nav_bar">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
-        <a href="#">Home</a>
-        <a href="#">BEAUTY</a>
-        <a href="#">GENZ</a>
-        <a href="#">STUDIO <sup class="sup">New</sup></a>
+        <ul class=".navul">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">GENZ</a></li>
+            <li><a href="#">STUDIO <sup class="sup">New</sup></a></li>
+        </ul>
     </nav>
     <div class="search_bar">
     <i class="fa-solid fa-magnifying-glass search_icon"></i>
@@ -30,14 +32,19 @@
             <i class="fa-regular fa-heart action_icon"></i>
             <span class="action_name">Wishlist</span>
         </div>
-        <div class="action_container">
-            <i class="fa-solid fa-bag-shopping action_icon"></i>
+        <a class="action_container" href="bag.html" target="_blank">
+            <i class="fa-solid fa-bag-shopping  action_icon"></i>
             <span class="action_name">Bag</span>
-        </div>
+            <span class="bag-item-count">0</span>
+        </a>
     </div>
    </header>
+   <hr>
    <main>
-    <div id="banner_container"><img src="Images/banner (5).jpg" alt="main Banner" class="Banner_image"></div>
+    <div class="items-container">
+
+    </div>
+    <div id="banner_container"><img src="Images/banner (5).jpg" alt="main Banner" class="Banner_image" alt="banner"></div>
     <div id="category_heading">MEADAL WORTHY BRANDS TO BAG</div>
     <div id="category_items">
         <a href="#"><img class="sale_item" src="Images/Brands/1.png" alt="im1"></a>
@@ -121,6 +128,8 @@
     <hr>
     <div class="copyright">&copy; ALL Rights Reserved</div>
    </footer>
+   <script src="data.js"></script>
+   <script src="myntra.js"></script>
    <script src="https://kit.fontawesome.com/0b4127f071.js" crossorigin="anonymous"></script>
 </body>
 </html>
